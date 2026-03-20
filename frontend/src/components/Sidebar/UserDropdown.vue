@@ -29,7 +29,7 @@
 						<div class="text-base font-medium text-ink-gray-9 leading-none">
 							<span
 								v-if="
-									branding.data?.app_name && branding.data?.app_name != 'Frappe'
+									branding.data?.app_name && branding.data?.app_name != 'Pragnova'
 								"
 							>
 								{{ branding.data?.app_name }}
@@ -190,12 +190,12 @@ const userDropdownOptions = computed(() => {
 				},
 				{
 					icon: FrappeCloudIcon,
-					label: 'Login to Frappe Cloud',
+					label: 'Login to Pragnova Cloud',
 					onClick: () => {
 						$dialog({
-							title: __('Login to Frappe Cloud?'),
+							title: __('Login to Pragnova Cloud?'),
 							message: __(
-								'Are you sure you want to login to your Frappe Cloud dashboard?'
+								'Are you sure you want to login to your Pragnova Cloud dashboard?'
 							),
 							actions: [
 								{
@@ -252,7 +252,7 @@ const clearDemoDataConfirmation = () => {
 	$dialog({
 		title: __('Confirm clearing demo data?'),
 		message: __(
-			'Are you sure you want to clear the demo data? This would delete the course "A guide  to Frappe Learning" along with all its associated data. This action cannot be undone.'
+			'Are you sure you want to clear the demo data? This would delete the course "A guide  to Pragnova Learning" along with all its associated data. This action cannot be undone.'
 		),
 		actions: [
 			{
